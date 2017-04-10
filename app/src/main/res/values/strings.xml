@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sunnybay</string>
+    <string name="Latitude_Text_Label">Latitude</string>
+    <string name="Longitude_Text_Label">Longitude</string>
+    <string name="Description_Text_Label">Description</string>
+    <string name="temperature_max_label">Max Temperature</string>
+    <string name="temperature_min_label">Min Temperature</string>
+    <string name="app_title_text">Sunny Bay Weather Forecast</string>
+
+</resources>
