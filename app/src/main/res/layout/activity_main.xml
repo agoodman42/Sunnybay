@@ -128,7 +128,8 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp" />
 
     <TextView
         android:id="@+id/humidityLabelId"
@@ -211,71 +212,32 @@
         app:layout_constraintTop_toTopOf="@+id/dailyMaxTempId"
         android:layout_marginRight="19dp" />
 
-    <TextView
-        android:id="@+id/snowId"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:hint="Loading..."
-        android:paddingEnd="15dp"
-        android:paddingStart="15dp"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/snowLabelId"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintRight_toRightOf="@+id/cloudTextId"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/cloudTextId"
-        app:layout_constraintTop_toTopOf="@+id/snowLabelId"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp" />
+
 
     <TextView
         android:id="@+id/windSpeedLabel"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:text="Wind Speed"
         android:textColor="@android:color/black"
         android:textColorHint="@color/gradientEnd"
-        app:layout_constraintRight_toLeftOf="@+id/windSpeedId"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/windDirectionId"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/cloudLabelId"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/windDirectionLabel"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="19dp" />
-
-    <TextView
-        android:id="@+id/rainLabelId"
-        android:layout_width="50dp"
-        android:layout_height="25dp"
-        android:layout_weight="1"
-        android:text="Rain"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        app:layout_constraintRight_toLeftOf="@+id/rainId"
-        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/windSpeedId"
+        app:layout_constraintTop_toBottomOf="@+id/cloudLabelId"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/snowLabelId"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="22dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/windSpeedLabel"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="22dp" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/latitudeTextLabelId"
@@ -295,65 +257,27 @@
 
     <TextView
         android:id="@+id/weatherDescriptionId"
-        android:layout_width="88dp"
+        android:layout_width="100dp"
         android:layout_height="0dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginStart="70dp"
         android:layout_weight="1"
         android:hint="Loading..."
         android:paddingEnd="15dp"
         android:paddingStart="15dp"
         android:textColor="@android:color/black"
         android:textColorHint="@color/gradientEnd"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="70dp"
         app:layout_constraintBottom_toBottomOf="@+id/descriptionLabelId"
-        android:layout_marginEnd="70dp"
-        app:layout_constraintRight_toRightOf="@+id/titleTextId"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/latitudeTextLabelId"
+        app:layout_constraintRight_toRightOf="@+id/titleTextId"
         app:layout_constraintTop_toTopOf="@+id/descriptionLabelId"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp" />
-
-
-    <TextView
-        android:id="@+id/snowLabelId"
-        android:layout_width="75dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="42dp"
-        android:layout_weight="1"
-        android:text="Snow"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        app:layout_constraintDimensionRatio="w,1:1"
-        app:layout_constraintLeft_toLeftOf="@+id/rainLabelId"
-        app:layout_constraintRight_toRightOf="@+id/rainLabelId"
-        app:layout_constraintTop_toBottomOf="@+id/windDirectionId"
+        tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <TextView
-        android:id="@+id/rainId"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:layout_weight="1"
-        android:hint="Loading..."
-        android:paddingEnd="15dp"
-        android:paddingStart="15dp"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/snowId"
-        app:layout_constraintRight_toRightOf="@+id/cloudTextId"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/windDirectionLabel"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/snowId" />
 
     <TextView
         android:id="@+id/longitudeLabelId"
@@ -369,23 +293,6 @@
         android:layout_marginTop="7dp"
         app:layout_constraintTop_toBottomOf="@+id/latitudeTextLabelId" />
 
-    <TextView
-        android:id="@+id/snowTimeId"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:hint="Loading..."
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        app:layout_constraintBottom_toBottomOf="@+id/snowId"
-        app:layout_constraintLeft_toLeftOf="@+id/rainTimeId"
-        app:layout_constraintRight_toRightOf="@+id/rainTimeId"
-        app:layout_constraintTop_toTopOf="@+id/snowId"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/LatitudeTextId"
@@ -447,81 +354,35 @@
         android:id="@+id/windDirectionLabel"
         android:layout_width="100dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="33dp"
-        android:layout_marginEnd="22dp"
         android:layout_marginLeft="21dp"
-        android:layout_marginRight="22dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="33dp"
         android:layout_weight="1"
         android:text="Wind Direction"
         android:textColor="@android:color/black"
         android:textColorHint="@color/gradientEnd"
-        app:layout_constraintBottom_toBottomOf="@+id/rainLabelId"
         app:layout_constraintLeft_toLeftOf="@+id/tempMaxLabelId"
-        app:layout_constraintRight_toLeftOf="@+id/rainId"
         app:layout_constraintTop_toTopOf="@+id/windSpeedLabel"
-        tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="314dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/titleTextId"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_weight="1"
         android:text="@string/app_title_text"
         android:textColor="@color/gradientStart"
         android:textSize="24sp"
         android:textStyle="bold"
+        tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="120dp"
-        app:layout_constraintTop_toBottomOf="@+id/snowTimeId"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="36dp" />
-
-    <TextView
-        android:id="@+id/rainTimeId"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="27dp"
-        android:layout_weight="1"
-        android:hint="Loading..."
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        app:layout_constraintBottom_toTopOf="@+id/snowTimeId"
-        app:layout_constraintLeft_toRightOf="@+id/rainId"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="0dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
-
-    <TextView
-        android:id="@+id/timeLabelId"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:layout_weight="1"
-        android:hint="loading..."
-        android:text="Time"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/gradientEnd"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/rainTimeId"
-        app:layout_constraintRight_toRightOf="@+id/rainTimeId"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintLeft_toLeftOf="@+id/rainTimeId" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
